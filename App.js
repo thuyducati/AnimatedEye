@@ -4,7 +4,8 @@ import {
   StyleSheet,
   TouchableOpacity,
   View,
-  Easing
+  Easing,
+  StatusBar
 } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
@@ -39,6 +40,7 @@ const App = () => {
 
   return (
     <View style={styles.container}>
+      <StatusBar hidden={true} />
       <>
         <TouchableOpacity
           activeOpacity={1}
